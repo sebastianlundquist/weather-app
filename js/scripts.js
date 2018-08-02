@@ -63,7 +63,7 @@
         weatherApp = document.getElementById("weather-app");
 
         // Initial datahämtning med default-parametrar från index.html.
-        fetch('http://opendata-download-metfcst.smhi.se/api/category/pmp2g/version/2/geotype/point/lon/' +
+        fetch('https://opendata-download-metfcst.smhi.se/api/category/pmp2g/version/2/geotype/point/lon/' +
             weatherApp.getAttribute("lon") + '/lat/' + weatherApp.getAttribute("lat") + '/data.json')
             .then(function (res) {
                 return res.json();
@@ -345,7 +345,7 @@
 
     // Fetchar rätt data beroende på latitud och longitud.
     function fetchURL(lat, lon, city) {
-        fetch('http://opendata-download-metfcst.smhi.se/api/category/pmp2g/version/2/geotype/point/lon/' +
+        fetch('https://opendata-download-metfcst.smhi.se/api/category/pmp2g/version/2/geotype/point/lon/' +
             lon + '/lat/' + lat + '/data.json')
             .then(function (res) {
                 return res.json();
