@@ -1,0 +1,62 @@
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+td, th{
+    padding: 4px;
+    border: solid 1px #999999;
+    text-align: left;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    width: 50px;
+}
+
+td:nth-child(2), th:nth-child(2),
+td:nth-child(3), th:nth-child(3) {
+    width: 100px;
+}
+
+td:nth-child(4), th:nth-child(4) {
+    width: 120px;
+}
+
+td:nth-child(5), th:nth-child(5) {
+    width: 180px;
+}
+
+button, input {
+    padding: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    width: 116px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #DDDDDD;
+    text-align: center;
+    position: relative;
+    outline: none;
+}
+
+button:hover, button:focus, input:focus {
+    border-color: #999999;
+}
+
+button:active {
+    background-color: #999999;
+}
+
+input {
+    width: 224px
+}
+
+div {
+    margin: 8px 0;
+}
